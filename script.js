@@ -1,8 +1,8 @@
 'use strict';
 
 //BANKIST APP
-
 // Data
+
 const account1 = {
     owner: 'Jonas Schmedtmann',
     movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
@@ -16,6 +16,7 @@ const account2 = {
     interestRate: 1.5,
     pin: 2222,
 };
+
 
 const account3 = {
     owner: 'Steven Thomas Williams',
@@ -106,8 +107,6 @@ const calcDisplaySummary = function(acc) {
         .reduce((acc, int) => acc + int, 0);
     labelSumInterest.textContent = `${interest}K.sh`
 };
-
-
 
 
 
@@ -216,17 +215,6 @@ labelBalance.addEventListener('click', function() {
         el => Number(el.textContent.replace('K.sh', ''))
     )
 });
-
-
-
-
-
-
-
-/////////////////////////////////////////////////
-
-
-
 
 
 // sorting
